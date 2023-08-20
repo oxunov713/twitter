@@ -7,89 +7,113 @@ void main() {
       home: Scaffold(
         body: Column(
           children: [
-            Center(
-              child: SizedBox(
-                height: 80,
-                width: 80,
-                child: Image.asset("assets/img.png"),
-              ),
+            Row(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(10),
+                  child: Icon(
+                    Icons.arrow_back_outlined,
+                    color: Colors.black,
+                    size: 35,
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(left: 110),
+                  child: SizedBox(
+                    height: 80,
+                    width: 80,
+                    child: Image.asset("assets/img.png"),
+                  ),
+                ),
+              ],
             ),
             Padding(
-              padding: const EdgeInsets.only(top: 170, left: 25),
+              padding: const EdgeInsets.only(top: 30, left: 25),
               child: Text(
-                "See what's happening in the world right now.",
+                "Create  your account",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
-                  fontSize: 40,
+                  fontSize: 30,
                 ),
               ),
             ),
             Container(
-              alignment: Alignment.center,
-              height: 50,
-              margin: EdgeInsets.only(top: 100, left: 20, right: 20),
+              height: 60,
+              margin: EdgeInsets.only(top: 60, left: 20, right: 20, bottom: 20),
               width: double.infinity,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.all(
-                  Radius.circular(60),
+                  Radius.circular(10),
                 ),
                 border: Border.all(
                   width: 2,
-                  color: Colors.black12,
+                  color: Colors.black26,
                 ),
               ),
-              child: RichText(
-                textAlign: TextAlign.center,
-                text: TextSpan(
-                  text: "G",
-                  style: TextStyle(
-                    fontSize: 35,
-                    color: Colors.blue,
-                    fontWeight: FontWeight.bold,
-                  ),
-                  children: [
-                    TextSpan(
-                      text: "  Continue with Google",
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 20,
-                      ),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: RichText(
+                  textAlign: TextAlign.left,
+                  text: TextSpan(
+                    text: "John Mobbin",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 26,
                     ),
-                  ],
+                  ),
                 ),
-              ),
-            ),
-            Text(
-              "------------------------------    or    ------------------------------",
-              style: TextStyle(
-                color: Colors.black45,
-                fontSize: 15,
               ),
             ),
             Container(
-              alignment: Alignment.center,
-              height: 50,
+              height: 60,
+              margin: EdgeInsets.all(20),
               width: double.infinity,
-              margin: EdgeInsets.only(left: 20, right: 20),
               decoration: BoxDecoration(
-                color: Colors.black,
                 borderRadius: BorderRadius.all(
-                  Radius.circular(60),
+                  Radius.circular(10),
                 ),
                 border: Border.all(
                   width: 2,
-                  color: Colors.black12,
+                  color: Colors.black26,
                 ),
               ),
-              child: RichText(
-                textAlign: TextAlign.center,
-                text: TextSpan(
-                  text: "Create account",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 20,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: RichText(
+                  textAlign: TextAlign.left,
+                  text: TextSpan(
+                    text: "johnmobbin@gmail.com",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 26,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            Container(
+              height: 60,
+              margin: EdgeInsets.all(20),
+              width: double.infinity,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.all(
+                  Radius.circular(10),
+                ),
+                border: Border.all(
+                  width: 2,
+                  color: Colors.black26,
+                ),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: RichText(
+                  textAlign: TextAlign.left,
+                  text: TextSpan(
+                    text: "February 18,1995",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 26,
+                    ),
                   ),
                 ),
               ),
@@ -98,44 +122,67 @@ void main() {
               padding: const EdgeInsets.only(left: 20, top: 20),
               child: RichText(
                 text: TextSpan(
-                  text: "By signing up, you agree to our ",
+                  text: "By signing up, you agree to the ",
                   style: TextStyle(
+                    wordSpacing: 2,
                     fontSize: 16,
                     color: Colors.black87,
                   ),
                   children: [
                     TextSpan(
-                      text: "Terms, Privacy Policy",
+                      text: " Terms of Service ",
                       style: TextStyle(color: Colors.blue),
                     ),
                     TextSpan(
-                      text: "  and  ",
+                      text: "  and Privacy Policy, including ",
                       style: TextStyle(color: Colors.black),
                     ),
                     TextSpan(
                       text: " Cooking Use.",
                       style: TextStyle(color: Colors.blue),
                     ),
+                    TextSpan(
+                      text:
+                          " Twitter may use your contact informtion,including your email address and phone number for purpose outlined in our Privacy Policy,like keeping your account secure and personalizing our services,including ads.",
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.black87,
+                      ),
+                    ),
+                    TextSpan(
+                      text: " Learn more. ",
+                      style: TextStyle(color: Colors.blue),
+                    ),
+                    TextSpan(
+                      text:
+                          " Others will be able to find you by email or phone number,when provided,unless you choose otherwise ",
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.black87,
+                      ),
+                    ),
+                    TextSpan(
+                      text: " here. ",
+                      style: TextStyle(color: Colors.blue),
+                    ),
                   ],
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.only(left: 20, top: 100),
-              child: RichText(
-                textAlign: TextAlign.left,
-                text: TextSpan(
-                  text: "Have an account already? ",
+            Container(
+              height: 70,
+              margin: EdgeInsets.only(left: 20, right: 20, top: 10),
+              decoration: BoxDecoration(
+                color: Colors.blue,
+                borderRadius: BorderRadius.all(Radius.circular(50)),
+              ),
+              child: Center(
+                child: Text(
+                  "Sign up",
                   style: TextStyle(
-                    fontSize: 15,
-                    color: Colors.black87,
-                  ),
-                  children: [
-                    TextSpan(
-                      text: "Log in",
-                      style: TextStyle(color: Colors.blue),
-                    ),
-                  ],
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                      color: Colors.white),
                 ),
               ),
             ),
